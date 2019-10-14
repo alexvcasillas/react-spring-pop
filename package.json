@@ -1,12 +1,13 @@
 {
   "name": "react-spring-pop",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/react-spring-pop.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "license": "MIT",
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
