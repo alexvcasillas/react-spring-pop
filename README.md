@@ -8,6 +8,7 @@
 2. [Motivation](#motivation)
 3. [Installation](#installation)
 4. [Basic usage](#basic-usage)
+6. [Demo](#demo)
 5. [Others](#others)
 
 ## Introduction
@@ -41,6 +42,10 @@ function App() {
   )
 }
 ```
+
+## Demo
+
+You can check a demo featuring all of the animations on the always marvelous [CodeSandbox.io](https://codesandbox.io/s/react-spring-pop-demo-696b8?fontsize=14)
 
 ## Pop Animations
 
