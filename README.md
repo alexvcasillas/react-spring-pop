@@ -1,5 +1,7 @@
 # React Spring POP!
 
+![React Spring POP! Logo](https://github.com/alexvcasillas/react-spring-pop/blob/master/logo/react-spring-pop-logo.png?raw=true)
+
 ## Contents
 
 1. [Introduction](#introduction)
