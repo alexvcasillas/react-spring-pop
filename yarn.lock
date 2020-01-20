@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alexvcasillas/use-observer@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alexvcasillas/use-observer/-/use-observer-1.0.1.tgz#ef58d45969c33df3592c792617142a737fa53ac7"
-  integrity sha512-NeSA0U/vwuhwHEXEI8rgLmY5FvcN88tZX5ISLLNewnLPhHgkNe+4lNkuLHZMy0Y7UYwjeaA2/imiQWQNWngbkQ==
+"@alexvcasillas/use-observer@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@alexvcasillas/use-observer/-/use-observer-1.0.3.tgz#cd96ea4689b94a81a8e599197a2ecf7d147b0f9d"
+  integrity sha512-xMRpYM7dgJBAQhM0yzshmc+eWCxxN+3+8rnkCl90cixCwzVkZ7/xI9uscET8kKZgV41i0ukGGIPd0iaX/ZHmqw==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
