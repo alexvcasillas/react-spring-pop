@@ -1,6 +1,6 @@
 {
   "name": "react-spring-pop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "module": "dist/react-spring-pop.esm.js",
   "typings": "dist/index.d.ts",
@@ -9,8 +9,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "start": "tsdx watch --entry src/index.tsx",
+    "build": "tsdx build --entry src/index.tsx",
     "test": "tsdx test --env=jsdom",
     "lint": "tsdx lint"
   },
@@ -40,7 +40,7 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "react-intersection-observer": "^8.24.2",
+    "@alexvcasillas/use-observer": "^1.0.1",
     "react-spring": "^8.0.27"
   }
 }

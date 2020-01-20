@@ -1,12 +1,10 @@
 import * as React from "react";
 import { animated, useSpring } from "react-spring";
-import { useInView } from 'react-intersection-observer'
+import { useObserver } from '@alexvcasillas/use-observer';
 import { bounceConfig } from "../types/config.type";
 
 export function BounceInLeft({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
   
   const { opacity } = useSpring({
     opacity: inView ? 1 : 0,
@@ -35,9 +33,7 @@ export function BounceInLeft({ threshold = 0, mass = 1, tension = 180, friction 
 }
 
 export function BounceInRight({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity } = useSpring({
     opacity: inView ? 1 : 0,
@@ -66,9 +62,7 @@ export function BounceInRight({ threshold = 0, mass = 1, tension = 180, friction
 }
 
 export function BounceInTop({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity } = useSpring({
     opacity: inView ? 1 : 0,
@@ -97,9 +91,7 @@ export function BounceInTop({ threshold = 0, mass = 1, tension = 180, friction =
 }
 
 export function BounceInBottom({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity } = useSpring({
     opacity: inView ? 1 : 0,

@@ -13,7 +13,7 @@
 
 ## Introduction
 
-**React Spring POP!** is a physics based animation library for your React application. It uses [React Spring](https://www.react-spring.io/) to generate performant off-thread calculations for the physics based animations and the _Intersection Observer_ API with the [react-intersection-observer](https://github.com/thebuilder/react-intersection-observer) library which both of them are pretty cool and my defaults to go.
+**React Spring POP!** is a physics based animation library for your React application. It uses [React Spring](https://www.react-spring.io/) to generate performant off-thread calculations for the physics based animations and the _Intersection Observer_ API with the [@alexvcasillas/use-observer](https://github.com/alexvcasillas/use-observer) library which both of them are pretty cool and my defaults to go.
 
 ## Motivation
 

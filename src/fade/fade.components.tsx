@@ -1,12 +1,10 @@
 import * as React from "react";
 import { animated, useSpring } from "react-spring";
-import { useInView } from 'react-intersection-observer'
 import { fadeConfig } from "../types/config.type";
+import { useObserver } from '@alexvcasillas/use-observer';
 
 export function FadeIn({ threshold = 0, children }: fadeConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity } = useSpring({
     opacity: inView ? 1 : 0,
@@ -25,15 +23,14 @@ export function FadeIn({ threshold = 0, children }: fadeConfig) {
 }
 
 export function FadeInLeft({ threshold = 0, children }: fadeConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity, x } = useSpring({
     opacity: inView ? 1 : 0,
     x: inView ? 0 : -10,
   });
 
+  // @ts-nocheck
   return (
     <animated.div
       style={{
@@ -48,9 +45,7 @@ export function FadeInLeft({ threshold = 0, children }: fadeConfig) {
 }
 
 export function FadeInRight({ threshold = 0, children }: fadeConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity, x } = useSpring({
     opacity: inView ? 1 : 0,
@@ -71,9 +66,7 @@ export function FadeInRight({ threshold = 0, children }: fadeConfig) {
 }
 
 export function FadeInTop({ threshold = 0, children }: fadeConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity, y } = useSpring({
     opacity: inView ? 1 : 0,
@@ -94,9 +87,7 @@ export function FadeInTop({ threshold = 0, children }: fadeConfig) {
 }
 
 export function FadeInBottom({ threshold = 0, children }: fadeConfig) {
-  const [ref, inView] = useInView({
-    threshold
-  });
+  const { inView, ref } = useObserver({ threshold });
 
   const { opacity, y } = useSpring({
     opacity: inView ? 1 : 0,
