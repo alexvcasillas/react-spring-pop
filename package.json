@@ -1,6 +1,6 @@
 {
   "name": "react-spring-pop",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/index.js",
   "module": "dist/react-spring-pop.esm.js",
   "typings": "dist/index.d.ts",
@@ -12,7 +12,8 @@
     "start": "tsdx watch --entry src/index.tsx",
     "build": "tsdx build --entry src/index.tsx",
     "test": "tsdx test --env=jsdom",
-    "lint": "tsdx lint"
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
   },
   "peerDependencies": {
     "react": ">=16"
