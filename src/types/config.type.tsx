@@ -1,3 +1,10 @@
+import { ElementType } from "react";
+
+export type genericConfig = {
+  element?: ElementType,
+  [x: string]: any,
+};
+
 export type fadeConfig = {
   threshold?: number,
   [x: string]: any,
