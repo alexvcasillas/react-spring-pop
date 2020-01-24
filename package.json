@@ -1,6 +1,6 @@
 {
   "name": "react-spring-pop",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "dist/index.js",
   "module": "dist/react-spring-pop.esm.js",
   "typings": "dist/index.d.ts",
