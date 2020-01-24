@@ -60,6 +60,10 @@ You can check a demo featuring all of the animations on the always marvelous [Co
 This components will accept the following props to configure a little its behaviour:
 
 ```js
+prop: element;
+  type: string;
+  default: 'div';
+
 prop: threshold;
   type: number;
   default: 0;
@@ -84,6 +88,8 @@ prop: mass;
   min: 1;
   max: 500;
 ```
+
+The **element** property indicates which kind of HTML element would you like to generate for this animated component.
 
 The **threshold** property indicates how much of the component needs to be displayed within the viewport to trigger the animation. It will take a number from 0 to 1 to indicate the percentage of the component that's on the viewport, meaning that 0.5 will be equals to the 50% of the component.
 
@@ -106,12 +112,18 @@ The **mass** property indicates the spring mass.
 This components will accept the following prop to configure a little its behaviour:
 
 ```js
+prop: element;
+  type: string;
+  default: 'div';
+
 prop: threshold;
   type: number;
   default: 0;
   min: 0;
   max: 1;
 ```
+
+The **element** property indicates which kind of HTML element would you like to generate for this animated component.
 
 The **threshold** property indicates how much of the component needs to be displayed within the viewport to trigger the animation. It will take a number from 0 to 1 to indicate the percentage of the component that's on the viewport, meaning that 0.5 will be equals to the 50% of the component.
 
@@ -127,6 +139,10 @@ The **threshold** property indicates how much of the component needs to be displ
 This components will accept the following props to configure a little its behaviour:
 
 ```js
+prop: element;
+  type: string;
+  default: 'div';
+
 prop: threshold;
   type: number;
   default: 0;
@@ -151,6 +167,8 @@ prop: mass;
   min: 1;
   max: 500;
 ```
+
+The **element** property indicates which kind of HTML element would you like to generate for this animated component.
 
 The **threshold** property indicates how much of the component needs to be displayed within the viewport to trigger the animation. It will take a number from 0 to 1 to indicate the percentage of the component that's on the viewport, meaning that 0.5 will be equals to the 50% of the component.
 

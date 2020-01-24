@@ -1,9 +1,9 @@
 import * as React from "react";
 import { animated, useSpring } from "react-spring";
 import { useObserver } from '@alexvcasillas/use-observer';
-import { bounceConfig } from "../types/config.type";
+import { genericConfig, bounceConfig } from "../types/config.type";
 
-export function PopIn({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
+export function PopIn({ threshold = 0, mass = 1, tension = 180, friction = 12, element = 'div', children, ...rest }: genericConfig & bounceConfig) {
   const { inView, ref } = useObserver({ threshold });
   
   const { opacity } = useSpring({
@@ -19,20 +19,18 @@ export function PopIn({ threshold = 0, mass = 1, tension = 180, friction = 12, c
     }
   });
 
-  return (
-    <animated.div
-      style={{
-        opacity: opacity,
-        transform: scale.interpolate(scale => `scale(${scale})`)
-      }}
-      ref={ref}
-    >
-        {children}
-    </animated.div>
-  )
+  return React.createElement(animated(element), {
+    ...rest,
+    style: {
+      ...rest.style,
+      opacity: opacity,
+      transform: scale.interpolate(scale => `scale(${scale})`)
+    },
+    ref,
+  }, children);
 }
 
-export function PopInLeft({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
+export function PopInLeft({ threshold = 0, mass = 1, tension = 180, friction = 12, element = 'div', children, ...rest }: genericConfig & bounceConfig) {
   const { inView, ref } = useObserver({ threshold });
   
   const { opacity } = useSpring({
@@ -48,20 +46,18 @@ export function PopInLeft({ threshold = 0, mass = 1, tension = 180, friction = 1
     }
   });
 
-  return (
-    <animated.div
-      style={{
-        opacity: opacity,
-        transform,
-      }}
-      ref={ref}
-    >
-        {children}
-    </animated.div>
-  )
+  return React.createElement(animated(element), {
+    ...rest,
+    style: {
+      ...rest.style,
+      opacity,
+      transform,
+    },
+    ref,
+  }, children);
 }
 
-export function PopInRight({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
+export function PopInRight({ threshold = 0, mass = 1, tension = 180, friction = 12, element = 'div', children, ...rest }: genericConfig & bounceConfig) {
   const { inView, ref } = useObserver({ threshold });
 
   const { opacity } = useSpring({
@@ -77,20 +73,18 @@ export function PopInRight({ threshold = 0, mass = 1, tension = 180, friction = 
     }
   });
 
-  return (
-    <animated.div
-      style={{
-        opacity: opacity,
-        transform
-      }}
-      ref={ref}
-    >
-      {children}
-    </animated.div>
-  )
+  return React.createElement(animated(element), {
+    ...rest,
+    style: {
+      ...rest.style,
+      opacity,
+      transform,
+    },
+    ref,
+  }, children);
 }
 
-export function PopInTop({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
+export function PopInTop({ threshold = 0, mass = 1, tension = 180, friction = 12, element = 'div', children, ...rest }: genericConfig & bounceConfig) {
   const { inView, ref } = useObserver({ threshold });
 
   const { opacity } = useSpring({
@@ -106,20 +100,18 @@ export function PopInTop({ threshold = 0, mass = 1, tension = 180, friction = 12
     }
   });
 
-  return (
-    <animated.div
-      style={{
-        opacity: opacity,
-        transform
-      }}
-      ref={ref}
-    >
-      {children}
-    </animated.div>
-  )
+  return React.createElement(animated(element), {
+    ...rest,
+    style: {
+      ...rest.style,
+      opacity,
+      transform,
+    },
+    ref,
+  }, children);
 }
 
-export function PopInBottom({ threshold = 0, mass = 1, tension = 180, friction = 12, children }: bounceConfig) {
+export function PopInBottom({ threshold = 0, mass = 1, tension = 180, friction = 12, element = 'div', children, ...rest }: genericConfig & bounceConfig) {
   const { inView, ref } = useObserver({ threshold });
 
   const { opacity } = useSpring({
@@ -135,15 +127,12 @@ export function PopInBottom({ threshold = 0, mass = 1, tension = 180, friction =
     }
   });
 
-  return (
-    <animated.div
-      style={{
-        opacity: opacity,
-        transform
-      }}
-      ref={ref}
-    >
-      {children}
-    </animated.div>
-  )
+  return React.createElement(animated(element), {
+    ...rest,
+    style: {
+      opacity,
+      transform,
+    },
+    ref,
+  }, children);
 }
