@@ -22,12 +22,14 @@ I started working on animating some components when they appeared at the viewpor
 ## Installation
 
 ```cmd
-yarn add react-spring-pop
+yarn add react-spring-pop react react-spring
 ```
 
 ```cmd
-npm i -s react-spring-pop
+npm i -s react-spring-pop react react-spring
 ```
+
+This project has two peer dependecies which are: [React](https://reactjs.org) and [React Spring](https://www.react-spring.io/). You will need both of the installed in your project in order for **React Spring POP!** to work properly.
 
 ## Basic usage
 

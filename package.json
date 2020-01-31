@@ -1,6 +1,6 @@
 {
   "name": "react-spring-pop",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "main": "dist/index.js",
   "module": "dist/react-spring-pop.esm.js",
   "typings": "dist/index.d.ts",
@@ -16,7 +16,8 @@
     "prepare": "tsdx build --entry src/index.tsx"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.8.0",
+    "react-spring": "^8.0.27"
   },
   "husky": {
     "hooks": {
@@ -41,7 +42,6 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "@alexvcasillas/use-observer": "^1.0.3",
-    "react-spring": "^8.0.27"
+    "@alexvcasillas/use-observer": "^1.0.3"
   }
 }
