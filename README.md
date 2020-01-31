@@ -64,6 +64,10 @@ prop: element;
   type: string;
   default: 'div';
 
+prop: once;
+  type: boolean;
+  default: false;
+
 prop: threshold;
   type: number;
   default: 0;
@@ -90,6 +94,8 @@ prop: mass;
 ```
 
 The **element** property indicates which kind of HTML element would you like to generate for this animated component.
+
+The **once** property indicates if the animation should be only triggered once and no more, so it will only get triggered the first time the element is on the viewport with the given threshold.
 
 The **threshold** property indicates how much of the component needs to be displayed within the viewport to trigger the animation. It will take a number from 0 to 1 to indicate the percentage of the component that's on the viewport, meaning that 0.5 will be equals to the 50% of the component.
 
@@ -116,6 +122,10 @@ prop: element;
   type: string;
   default: 'div';
 
+prop: once;
+  type: boolean;
+  default: false;
+
 prop: threshold;
   type: number;
   default: 0;
@@ -124,6 +134,8 @@ prop: threshold;
 ```
 
 The **element** property indicates which kind of HTML element would you like to generate for this animated component.
+
+The **once** property indicates if the animation should be only triggered once and no more, so it will only get triggered the first time the element is on the viewport with the given threshold.
 
 The **threshold** property indicates how much of the component needs to be displayed within the viewport to trigger the animation. It will take a number from 0 to 1 to indicate the percentage of the component that's on the viewport, meaning that 0.5 will be equals to the 50% of the component.
 
@@ -142,6 +154,10 @@ This components will accept the following props to configure a little its behavi
 prop: element;
   type: string;
   default: 'div';
+
+prop: once;
+  type: boolean;
+  default: false;
 
 prop: threshold;
   type: number;
@@ -169,6 +185,8 @@ prop: mass;
 ```
 
 The **element** property indicates which kind of HTML element would you like to generate for this animated component.
+
+The **once** property indicates if the animation should be only triggered once and no more, so it will only get triggered the first time the element is on the viewport with the given threshold.
 
 The **threshold** property indicates how much of the component needs to be displayed within the viewport to trigger the animation. It will take a number from 0 to 1 to indicate the percentage of the component that's on the viewport, meaning that 0.5 will be equals to the 50% of the component.
 
