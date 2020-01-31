@@ -2,6 +2,7 @@ import { ElementType } from "react";
 
 export type genericConfig = {
   element?: ElementType,
+  once?: boolean,
   [x: string]: any,
 };
 
