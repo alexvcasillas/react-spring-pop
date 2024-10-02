@@ -16,8 +16,8 @@
     "prepare": "tsdx build --entry src/index.tsx"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-spring": "^8.0.27"
+    "react": "^18.3.1",
+    "react-spring": "^9.7.4"
   },
   "husky": {
     "hooks": {
@@ -31,15 +31,15 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.18",
-    "@types/react": "^16.9.5",
-    "@types/react-dom": "^16.9.1",
-    "husky": "^3.0.9",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "tsdx": "^0.9.3",
-    "tslib": "^1.10.0",
-    "typescript": "^3.6.4"
+    "@types/jest": "^29.5.13",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "husky": "^9.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.2"
   },
   "dependencies": {
     "@alexvcasillas/use-observer": "^1.0.3"
